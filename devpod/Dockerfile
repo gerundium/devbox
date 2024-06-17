@@ -75,8 +75,8 @@ ENV RUNNING_IN_DOCKER true
 RUN curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 RUN git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-COPY zshrc .zshrc
-COPY motd motd
+COPY source/zshrc .zshrc
+COPY source/motd motd
 
 # Fix permissions for OpenShift and tshark
 RUN chmod -R g=u /root
@@ -85,7 +85,7 @@ RUN chown root:root /usr/bin/dumpcap
 # Install devbox
 RUN curl -fsSL https://get.jetify.com/devbox | bash -s -- --force
 RUN mkdir /root/.bin
-COPY sh.launchDevbox /root/.bin/launchDevbox
+COPY source/sh.launchDevbox /root/.bin/launchDevbox
 RUN chmod +x /root/.bin/launchDevbox
 ENV PATH="${PATH}:/root/.bin"
 
