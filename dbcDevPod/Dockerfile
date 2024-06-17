@@ -69,6 +69,7 @@ RUN set -ex \
 USER root
 WORKDIR /root
 ENV HOSTNAME dbcDevPod
+ENV RUNNING_IN_DOCKER true
 
 # ZSH Themes
 RUN curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
@@ -89,4 +90,4 @@ RUN chmod +x /root/.bin/launchDevbox
 ENV PATH="${PATH}:/root/.bin"
 
 # Running ZSH
-CMD ["zsh"]
+ENTRYPOINT [ "/bin/zsh" ]

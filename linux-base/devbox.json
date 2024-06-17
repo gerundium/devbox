@@ -12,7 +12,10 @@
     "tmux@latest",
     "bat@latest",
     "exa@latest",
-    "tree@latest"
+    "tree@latest",
+    "docker@latest",
+    "docker-compose@latest",
+    "fd@latest"
   ],
   "env": {
     "MYVIMRC": "$PWD/.config/.vimrc",
@@ -24,7 +27,7 @@
     ],
     "scripts": {
       "test": [
-        "echo \"Error: no test specified\" && exit 1"        
+        "echo \"Error: no test specified\" && exit 1"
       ]
     }
   }

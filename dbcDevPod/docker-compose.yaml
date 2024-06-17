@@ -1,0 +1,5 @@
+services:
+  devpod:
+   image: eiboo9uu/devpod
+   container_name: dbcDevPod
+   network_mode: "host"
