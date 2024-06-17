@@ -10,6 +10,8 @@
     "htop@latest",
     "vim@latest",
     "tmux@latest",
+    "bat@latest",
+    "exa@latest",
     "tree@latest"
   ],
   "env": {
