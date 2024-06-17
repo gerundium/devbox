@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.11.1/.schema/devbox.schema.json",
+  "packages": [
+    "mc@latest",
+    "ripgrep@latest",
+    "zsh@latest",
+    "zsh-completions@latest",
+    "oh-my-zsh@latest",
+    "git@latest",
+    "htop@latest",
+    "vim@latest",
+    "tmux@latest",
+    "tree@latest"
+  ],
+  "env": {
+    "MYVIMRC": "$PWD/.config/.vimrc",
+    "ZDOTDIR": "$PWD/.config/zsh"
+  },
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"        
+      ]
+    }
+  }
+}
