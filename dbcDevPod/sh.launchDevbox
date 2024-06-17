@@ -1,0 +1,4 @@
+#!/bin/bash
+git clone https://github.com/gerundium/devbox.git
+cd devbox/linux-base
+devbox shell
