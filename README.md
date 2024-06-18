@@ -4,5 +4,5 @@
 ```
 .
 ├── devpod        # Container image with devbox setup
-└── linux-base    # Linux baseline profile for devbox shell
+└── linux-base    # Install Linux baseline profile locally
 ```
