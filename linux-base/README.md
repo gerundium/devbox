@@ -21,6 +21,8 @@ Fastest way to deploy a devbox setup
 # Clone this repository
 git clone https://github.com/gerundium/devbox.git
 
+cd devbox/linux-base
+
 # Install and run the devbox environment linux-base
 bash install/sh.launchDevboxSingleUserMode
 
