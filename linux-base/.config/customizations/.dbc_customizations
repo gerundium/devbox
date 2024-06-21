@@ -41,6 +41,10 @@ if [ -x "$(command -v batcat)" ]; then
         alias less=batcat
         alias cat='batcat'
 fi
+if [ -x "$(command -v bat)" ]; then
+        alias less=bat
+        alias cat='bat'
+fi
 
 # vscode
 export PATH="/usr/share/code:$PATH"
