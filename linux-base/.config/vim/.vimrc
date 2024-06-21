@@ -1,3 +1,4 @@
+set nocompatible   # Fix terminal issues like hitting-arrow-keys-adds-characters
 set number
 set linebreak
 set showbreak=+++
