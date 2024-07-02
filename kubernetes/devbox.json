@@ -20,17 +20,24 @@
     "kubernetes-helm@latest",
     "krew@latest",
     "jq@latest",
-    "yq@latest"
+    "yq@latest",
+    "argocd@latest",
+    "argocd-vault-plugin@latest",
+    "talosctl@latest"
   ],
   "env": {
-    "MYVIMRC": "$PWD/.config/.vimrc",
-    "ZDOTDIR": "$PWD/.config/zsh"
+    "MYVIMRC":       "$PWD/.config/.vimrc",
+    "ZDOTDIR":       "$PWD/.config/zsh",
+    "HOME":          "$HOME",
+    "BASH_IT_THEME": "powerline-naked"
   },
   "shell": {
     "init_hook": [
-      "export PS1='🏗️  k8s > '",
+      "[ -e \"$HOME/.bash_it\" ] || (git clone --depth=1 https://github.com/Bash-it/bash-it.git $HOME/.bash_it)",
+      "export PS1='(k8s)> '",
       "source $DEVBOX_PROJECT_ROOT/.config/customizations/.dbc_customizations",
-      "echo 'Welcome to devbox!' > /dev/null"
+      "echo 'Welcome to devbox!' > /dev/null",
+      "source $BASH_IT/bash_it.sh"
     ],
     "scripts": {
       "test": [
