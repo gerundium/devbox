@@ -37,7 +37,7 @@
       "export PS1='(k8s)> '",
       "source $DEVBOX_PROJECT_ROOT/.config/customizations/.dbc_customizations",
       "echo 'Welcome to devbox!' > /dev/null",
-      "source $BASH_IT/bash_it.sh"
+      "source $HOME/.bash_it/bash_it.sh"
     ],
     "scripts": {
       "test": [
