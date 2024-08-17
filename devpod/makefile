@@ -2,7 +2,7 @@
 
 # Build Vars
 IMAGENAME=eiboo9uu/devpod
-VERSION=0.5
+VERSION=0.6
 
 .DEFAULT_GOAL := all
 

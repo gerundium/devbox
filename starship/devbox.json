@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.11.1/.schema/devbox.schema.json",
+  "packages": [
+    "mc@latest",
+    "ripgrep@latest",
+    "zsh@latest",
+    "zsh-completions@latest",
+    "oh-my-zsh@latest",
+    "git@latest",
+    "htop@latest",
+    "vim@latest",
+    "tmux@latest",
+    "bat@latest",
+    "exa@latest",
+    "tree@latest",
+    "docker@latest",
+    "docker-compose@latest",
+    "fd@latest",
+    "starship@latest"
+  ],
+  "env": {
+    "MYVIMRC": "$PWD/.config/.vimrc",
+    "ZDOTDIR": "$PWD/.config/zsh"
+  },
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null",
+      "eval \"$(starship init bash)\"",
+      "starship preset pastel-powerline -o ~/.config/starship.toml",
+      "source $DEVBOX_PROJECT_ROOT/.config/customizations/.dbc_customizations"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}

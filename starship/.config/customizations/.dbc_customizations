@@ -1,0 +1,56 @@
+# ---
+# dbc customizations
+# ---
+
+# vim
+MYVIMRC="$PWD/.config/vim/.vimrc"
+alias vim="vim -u $MYVIMRC"
+
+# exa
+if [ -x "$(command -v exa)" ]; then
+        #alias l="exa --long --tree --level 2 --group-directories-first --group --header --octal-permissions --no-permissions --extended"
+        alias l="exa --tree --level 2"
+        alias ll="exa --long --tree --all --level 2 --group-directories-first --group --header --octal-permissions --no-permissions --extended"
+else
+        if [ -x "$(command -v tree)" ]; then
+                alias l='pwd; tree -L 1 -CF --dirsfirst'
+                alias ll='pwd; tree -L 1 -augshCDFp --dirsfirst'
+                alias ll='pwd; tree -L 1 -augshCDFp --dirsfirst'
+        fi
+fi
+
+alias si='sudo -i'
+alias k='kubectl'
+alias cdp='cd ~/Projekte'
+alias gc='git commit'
+alias ga='git add --all .'
+alias gs='git status'
+alias gp='git push'
+alias sshhosts='echo -e "\n"; echo "[ssh hosts]: $(egrep "Host " .ssh/config | sed -e "s/Host//" | grep -v "*" | sort | tr "\n" " ")"; echo -e "\n"'
+alias python='python3'
+alias priv="unset HISTFILE"
+# dedockify <imageID>
+alias dedockify="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm mrhavens/dedockify"
+alias lll='stat -c "%a %n" '
+alias cat_cert='openssl x509 -text -in'
+
+# --
+# different apps
+# -- 
+if [ -x "$(command -v batcat)" ]; then
+        alias less=batcat
+        alias cat='batcat'
+fi
+if [ -x "$(command -v bat)" ]; then
+        alias less=bat
+        alias cat='bat'
+fi
+
+# vscode
+export PATH="/usr/share/code:$PATH"
+
+# step-ca
+alias step=step-cli
+
+# arkade
+export PATH=$PATH:$HOME/.arkade/bin/
