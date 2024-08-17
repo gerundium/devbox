@@ -19,14 +19,13 @@
     "starship@latest"
   ],
   "env": {
-    "MYVIMRC": "$PWD/.config/.vimrc",
-    "ZDOTDIR": "$PWD/.config/zsh"
+    "MYVIMRC": "$PWD/.config/.vimrc"
   },
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null",
       "eval \"$(starship init bash)\"",
-      "starship preset pastel-powerline -o ~/.config/starship.toml",
+      "starship preset gruvbox-rainbow -o ~/.config/starship.toml",
       "source $DEVBOX_PROJECT_ROOT/.config/customizations/.dbc_customizations"
     ],
     "scripts": {
