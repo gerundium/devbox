@@ -54,3 +54,6 @@ alias step=step-cli
 
 # arkade
 export PATH=$PATH:$HOME/.arkade/bin/
+
+# Krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"

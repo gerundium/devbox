@@ -16,7 +16,19 @@
     "docker@latest",
     "docker-compose@latest",
     "fd@latest",
-    "starship@latest"
+    "starship@latest",
+    "yq@latest",
+    "jq@latest",
+    "kubernetes-helm@latest",
+    "kubectl@latest",
+    "kubectl-tree@latest",
+    "kubectl-doctor@latest",
+    "kubectl-example@latest",
+    "kubectl-tree@latest",
+    "kubectl-validate@latest",
+    "kubectl-df-pv@latest",
+    "k9s@latest",
+    "krew@latest"
   ],
   "env": {
     "MYVIMRC": "$PWD/.config/.vimrc"
