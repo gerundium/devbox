@@ -57,3 +57,12 @@ export PATH=$PATH:$HOME/.arkade/bin/
 
 # Krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# Kubectl
+source <(kubectl completion bash)
+
+# --
+# nnn
+# --
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
