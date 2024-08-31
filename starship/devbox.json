@@ -1,35 +1,51 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.11.1/.schema/devbox.schema.json",
   "packages": [
-    "mc@latest",
-    "ripgrep@latest",
-    "zsh@latest",
-    "zsh-completions@latest",
-    "oh-my-zsh@latest",
-    "git@latest",
-    "htop@latest",
-    "vim@latest",
-    "tmux@latest",
-    "bat@latest",
-    "exa@latest",
-    "tree@latest",
-    "docker@latest",
-    "docker-compose@latest",
-    "fd@latest",
-    "starship@latest",
-    "yq@latest",
-    "jq@latest",
-    "kubernetes-helm@latest",
-    "kubectl@latest",
-    "kubectl-tree@latest",
-    "kubectl-doctor@latest",
-    "kubectl-example@latest",
-    "kubectl-tree@latest",
-    "kubectl-validate@latest",
-    "kubectl-df-pv@latest",
-    "k9s@latest",
-    "krew@latest",
-    "nnn@latest"
+    "abook@latest",                   // dependengy: neomutt
+    "bat@latest",                     // general purpose
+    "chromium@latest",                // general purpose
+    "curl@latest",                    // general purpose
+    "docker-compose@latest",          // dependengy: docker
+    "docker@latest",                  // general purpose
+    "exa@latest",                     // general purpose
+    "fd@latest",                      // general purpose
+    "git@latest",                     // general purpose
+    "gpg-mdp@latest",                 // dependengy: gpg
+    "gpg-tui@latest",                 // dependengy: gpg
+    "gpgme@latest",                   // dependengy: gpg
+    "gpgstats@latest",                // dependengy: gpg
+    "htop@latest",                    // general purpose
+    "isync@latest",                   // dependengy: neomutt
+    "jq@latest",                      // general purpose
+    "k9s@latest",                     // dependengy: k8s
+    "krew@latest",                    // dependengy: k8s
+    "kubectl-df-pv@latest",           // dependengy: k8s
+    "kubectl-doctor@latest",          // dependengy: k8s
+    "kubectl-example@latest",         // dependengy: k8s
+    "kubectl-tree@latest",            // dependengy: k8s
+    "kubectl-tree@latest",            // dependengy: k8s
+    "kubectl-validate@latest",        // dependengy: k8s
+    "kubectl@latest",                 // dependengy: k8s
+    "kubernetes-helm@latest",         // dependengy: k8s
+    "lynx@latest",                    // dependengy: neomutt
+    "mc@latest",                      // general purpose
+    "msmtp      @latest",             // dependengy: neomutt
+    "mutt-wizard@latest",             // dependengy: neomutt
+    "neomutt@latest",                 // general purpose
+    "nnn@latest",                     // general purpose
+    "notmuch@latest",                 // dependengy: neomutt
+    "oh-my-zsh@latest",               // dependengy: zsh
+    "pass@latest",                    // dependengy: neomutt
+    "ripgrep@latest",                 // general purpose
+    "starship@latest",                // general purpose
+    "tmux@latest",                    // general purpose
+    "tree@latest",                    // general purpose
+    "urlview@latest",                 // general purpose
+    "vim@latest",                     // general purpose
+    "vscode@latest",                  // general purpose
+    "yq@latest",                      // general purpose
+    "zsh-completions@latest",         // dependengy: zsh
+    "zsh@latest"                      // general purpose
   ],
   "env": {
     "MYVIMRC": "$PWD/.config/.vimrc"
