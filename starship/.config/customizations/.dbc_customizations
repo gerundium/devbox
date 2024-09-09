@@ -21,6 +21,7 @@ fi
 
 alias si='sudo -i'
 alias k='kubectl'
+complete -F __start_kubectl k
 alias cdp='cd ~/Projekte'
 alias gc='git commit'
 alias ga='git add --all .'
