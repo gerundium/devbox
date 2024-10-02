@@ -2,14 +2,16 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.11.1/.schema/devbox.schema.json",
   "packages": [
     "abook@latest", // dependengy: neomutt
+    "bash-completion@latest", // general purpose
     "bat@latest", // general purpose
-    "chromium@latest", // general purpose
     "curl@latest", // general purpose
+    "di@latest", // general purpose
     "docker-compose@latest", // dependengy: docker
     "docker@latest", // general purpose
     "exa@latest", // general purpose
     "fd@latest", // general purpose
     "git@latest", // general purpose
+    "go@latest", // general purpose
     "gpg-mdp@latest", // dependengy: gpg
     "gpg-tui@latest", // dependengy: gpg
     "gpgme@latest", // dependengy: gpg
@@ -28,14 +30,16 @@
     "kubectl@latest", // dependengy: k8s
     "kubernetes-helm@latest", // dependengy: k8s
     "lynx@latest", // dependengy: neomutt
-    "mc@latest", // general purpose
-    "msmtp      @latest", // dependengy: neomutt
+    "minio-client@latest", // general purpose
+    "msmtp@latest", // dependengy: neomutt
     "mutt-wizard@latest", // dependengy: neomutt
     "neomutt@latest", // general purpose
     "newsboat@latest", // general purpose
     "nnn@latest", // general purpose
     "notmuch@latest", // dependengy: neomutt
+    "nushell@latest", // dependengy: neomutt
     "oh-my-zsh@latest", // dependengy: zsh
+    "operator-sdk@latest", // k8s
     "pass@latest", // dependengy: neomutt
     "ripgrep@latest", // general purpose
     "starship@latest", // general purpose
@@ -43,14 +47,13 @@
     "tree@latest", // general purpose
     "urlview@latest", // general purpose
     "vim@latest", // general purpose
-    "vscode@latest", // general purpose
     "yq@latest", // general purpose
     "zsh-completions@latest", // dependengy: zsh
-    "zsh@latest",
-    "bash-completion@latest", // general purpose
+    "zsh@latest"
+    //"mc@latest", // general purpose
   ],
   "env": {
-    "MYVIMRC": "$PWD/.config/.vimrc",
+    "MYVIMRC": "$PWD/.config/.vimrc"
   },
   "shell": {
     "init_hook": [
@@ -62,7 +65,7 @@
     ],
     "scripts": {
       "test": [
-        "echo \"Error: no test specified\" && exit 1",
+        "echo \"Error: no test specified\" && exit 1"
       ],
     },
   },

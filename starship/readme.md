@@ -10,10 +10,11 @@ mkdir -p ~/.local/share/fonts/
 
 # Download the font
 cd /tmp/
-curl -OL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Lilex.zip
+curl -OL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Monaspace.zip
 
 # Install font
-unzip Lilex.zip -d ~/.local/share/fonts/Lilex
+## Favorite: MonaspiceNe Nerd Font Mono
+unzip Monaspace.zip -d ~/.local/share/fonts/Monaspace
 
 # Rebuild fontcache
 fc-cache -f -v
